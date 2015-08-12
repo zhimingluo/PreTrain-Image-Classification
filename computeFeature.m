@@ -11,7 +11,7 @@ end
 % compute the features for each images
 for ii = 1:length(database.path)
     imgpath = database.path{ii};
-    fprintf('%4d£º%s\n',ii,imgpath);
+    fprintf('%4d:%s\n',ii,imgpath);
     im = imread(imgpath) ;
     
     % obtain and preprocess an image
